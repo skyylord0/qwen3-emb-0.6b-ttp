@@ -1,0 +1,1 @@
+# qwen3-emb-0.6b-ttp
