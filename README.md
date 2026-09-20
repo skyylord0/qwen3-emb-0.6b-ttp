@@ -120,14 +120,6 @@ Evaluation is performed over a set of adversarial-behavior sentences, each paire
 | Qwen3-Embedding-4B (base) | 0.61 | 49% | 69% | 5 | 22 | 61 |
 | **Qwen3-Embedding-0.6B (this model, fine-tuned)** | **0.70** | **59%** | **78%** | **3** | **16** | **48** |
 
-**Sub-technique level – exact match, CTF set (102 instructions)**
-
-| Model | MRR | H@1 | H@3 | K@75% | K@90% | K@95% |
-|---|---|---|---|---|---|---|
-| Qwen3-Embedding-0.6B (base) | 0.46 | 29% | 55% | 9 | 23 | 34 |
-| Qwen3-Embedding-4B (base) | 0.58 | 43% | 64% | 5 | 15 | 22 |
-| **Qwen3-Embedding-0.6B (this model, fine-tuned)** | **0.69** | **54%** | **82%** | **3** | **7** | **36** |
-
 **Technique level, CTF set (102 instructions)**
 
 | Model | MRR | H@1 | H@3 | K@75% | K@90% | K@95% |
@@ -135,6 +127,14 @@ Evaluation is performed over a set of adversarial-behavior sentences, each paire
 | Qwen3-Embedding-0.6B (base) | 0.54 | 41% | 62% | 7 | 21 | 32 |
 | Qwen3-Embedding-4B (base) | 0.64 | 51% | 70% | 4 | 8 | 19 |
 | **Qwen3-Embedding-0.6B (this model, fine-tuned)** | **0.78** | **68%** | **87%** | **2** | **5** | **13** |
+
+**Sub-technique level – exact match, CTF set (102 instructions)**
+
+| Model | MRR | H@1 | H@3 | K@75% | K@90% | K@95% |
+|---|---|---|---|---|---|---|
+| Qwen3-Embedding-0.6B (base) | 0.46 | 29% | 55% | 9 | 23 | 34 |
+| Qwen3-Embedding-4B (base) | 0.58 | 43% | 64% | 5 | 15 | 22 |
+| **Qwen3-Embedding-0.6B (this model, fine-tuned)** | **0.69** | **54%** | **82%** | **3** | **7** | **36** |
  
 The held-out splits — CISA advisories and the CTF set — were never seen during training or hyperparameter selection, and are used to check that performance generalizes beyond the training data distribution.
  
